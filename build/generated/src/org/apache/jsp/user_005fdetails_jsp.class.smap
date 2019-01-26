@@ -1,0 +1,12 @@
+SMAP
+user_005fdetails_jsp.java
+JSP
+*S JSP
+*F
++ 0 user_details.jsp
+user_details.jsp
+*L
+1,11:45
+11,34:56
+44,7:90
+*E

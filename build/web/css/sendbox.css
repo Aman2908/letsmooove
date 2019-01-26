@@ -1,0 +1,41 @@
+body{
+	background-color: "#A2BE32"
+}
+form{
+	position : fixed;
+	bottom : 30px;
+	width: 80%;
+	padding: 20px;
+	border: none;
+	margin: 10px;
+}
+.typebox{
+	width: 90%;
+	height: 50px;
+	font-size: 25px;
+	margin-top: 10px;
+}
+.sendbutton{
+	float: right;
+	margin: 5px;
+	padding: 10px;
+	font-size: 20px;
+	color: #00AA00;
+	font-weight: bold;
+	background-color: #333399;
+}
+#home{
+		position: fixed;
+		right: 10px;
+		font-size: 20px;
+}
+
+
+table{
+	padding: 10px;
+	font-size: 25px;
+}
+
+table th{
+	font-variant: small-caps;
+}
