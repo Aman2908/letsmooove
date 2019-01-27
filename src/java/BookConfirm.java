@@ -21,8 +21,9 @@ public class BookConfirm extends HttpServlet {
         String mob=(String)request.getSession().getAttribute("uid");
         String rideid=(String)request.getSession().getAttribute("rideid");
         String did="";
-        String seatbooked="";
-        
+        int seatbooked=0;
+        System.out.println(mob);
+        int sbb=0;
         PreparedStatement ps = con.prepareStatement("select * from bookingcart" + mob + " where rideid=?");
             ps.setString(1, rideid);
             
@@ -30,14 +31,18 @@ public class BookConfirm extends HttpServlet {
         
             while(rs.next()){
                 did=rs.getString("did");
-                seatbooked=rs.getString("seatbooked");
+                
+                seatbooked=Integer.parseInt(rs.getString("seatbooked"));
+                sbb+=seatbooked;
             }
+            
             
         System.out.println("before insert in ridebooked");
         PreparedStatement ps1 = con.prepareStatement("insert into ridebooked" + mob + "(rideid,did,seatbooked) values(?,?,?)");
             ps1.setString(1, rideid);
             ps1.setString(2, did);
-            ps1.setString(3, seatbooked);
+            ps1.setString(3, String.valueOf(seatbooked));
+            
             //ps.setString(4,jdate);
             //ps.setString(5,jtime);
             System.out.println("before insert in  did = "+did);
@@ -46,7 +51,7 @@ public class BookConfirm extends HttpServlet {
             PreparedStatement ps2 = con.prepareStatement("insert into rideoffered" + did + " (rideid,uid,seatbooked) values(?,?,?)");
             ps2.setString(1, rideid);
             ps2.setString(2, mob);
-            ps2.setString(3, seatbooked);
+            ps2.setString(3, String.valueOf(sbb));
             //ps.setString(4,jdate);
             //ps.setString(5,jtime);
             System.out.println("before insert in delete bookingcart");
@@ -63,7 +68,10 @@ public class BookConfirm extends HttpServlet {
                         }
             
             
-            int seatavail=Integer.parseInt(seat)-Integer.parseInt(seatbooked);
+            int seatavail=Integer.parseInt(seat)-seatbooked;
+            if(seatavail<0){
+                seatavail=0;
+            }
             System.out.println("  1");
             PreparedStatement ps6 = con.prepareStatement("update OfferedRidesbasics set seatavail=? where rideid=?");
             ps6.setString(1, String.valueOf(seatavail));
@@ -78,6 +86,13 @@ public class BookConfirm extends HttpServlet {
             
             int res4=ps4.executeUpdate();
             System.out.println("  3");
+            
+            PreparedStatement ps7 = con.prepareStatement("delete from bookingcart" + mob + " where rideid=?");
+            ps7.setString(1, rideid);
+            
+            int rs7= ps7.executeUpdate();
+        
+            seatbooked=0;
             response.sendRedirect("dashboard.jsp");
             
         }catch(Exception e){

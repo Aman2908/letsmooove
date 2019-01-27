@@ -3,6 +3,7 @@ import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.Statement;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -26,7 +27,7 @@ public class Login extends HttpServlet {
             ps.setString(1, mob);
             ps.setString(2, pass);
             
-            ResultSet rs=ps.executeQuery();
+            ResultSet rs=ps.executeQuery(); 
             
             int i=0;
             while(rs.next()){
