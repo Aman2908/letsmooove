@@ -81,6 +81,7 @@
                                         sb=String.valueOf(rs4.getString("seatbooked"));
                                     }
                                     System.out.println("rideid "+rideid+"  seat ="+sb);
+                                    
                                        resulting+="<tr><td>"+rs2.getString("src")+"</td><td>"+rs2.getString("dest")+"</td>  <td>"+rs2.getString("date1")+"</td>   <td>   "+rs2.getString("time1")+"</td><td>    "+rs2.getString("seatavail")+"</td><td><a href='user_details.jsp?rideid="+rideid+"'>"+sb+"</td></tr>";
                                 }
                             
@@ -116,7 +117,7 @@
                                         seatavail=rs4.getString("seatavail");
                                     }
                                     int savail=Integer.parseInt(seatavail);
-                                    if(savail>0)
+                                    
                                        resulting1+="<tr><td>"+src+"</td><td>"+ dest +"</td>  <td>"+ date1 +"</td>   <td>   "+ time1 +"</td><td><a href='owner_details.jsp?rideid="+rideid+"'>  "+ sbkd +"</a></td><td>"+ name1 +"</td></tr>";
                                 }
                             
@@ -147,7 +148,7 @@
                     </li></div>
                 <div class="col-sm-2"><a class="nav-link text-white" href="findride.jsp">Find Ride</a></div>
                 <div class="col-sm-2"><a class="nav-link text-white" href="offerride.jsp">Offer Ride</a></div>
-                <div class="col-sm-1"><a class="nav-link text-white" href="map.jsp">Current Ride</a></div>
+                <div class="col-sm-1"><a class="nav-link text-white" href="crdecider.jsp">Current Ride</a></div>
                 <div class="col-sm-2"><a class="nav-link text-white" href="#">Hello <% out.print(name); %></a></div>
                 <div class="dropdown col-sm-1">
                     <button class="btn btn1 dropdown-toggle shadow" type="button" data-toggle="dropdown">
@@ -191,7 +192,7 @@
 
                 <p class="d-flex justify-content-center font1"><a class="pad8 text-dark" href="findride.jsp">Find Ride</a> 
                     <a class="pad8 text-dark" href="offerride.jsp">Offer Ride</a>
-                    <a class="pad8 text-dark" href="map.jsp">Current Ride</a></p>
+                    <a class="pad8 text-dark" href="crdecider.jsp">Current Ride</a></p>
 
             </div>
 

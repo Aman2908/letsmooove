@@ -3,10 +3,38 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/vinay/Documents/NetBeansProjects/letsmooove/src/java/Register.java</file>
+            <file>file:/C:/Users/vinay/Documents/NetBeansProjects/letsmooove/web/map.jsp</file>
+            <file>file:/C:/Users/vinay/Documents/NetBeansProjects/letsmooove/web/savemessage.jsp</file>
+            <file>file:/C:/Users/vinay/Documents/NetBeansProjects/letsmooove/web/css/odtl.css</file>
+            <file>file:/C:/Users/vinay/Documents/NetBeansProjects/letsmooove/web/offerride.jsp</file>
+            <file>file:/C:/Users/vinay/Documents/NetBeansProjects/letsmooove/web/pgResponse.jsp</file>
+            <file>file:/C:/Users/vinay/Documents/NetBeansProjects/letsmooove/web/loadRide.jsp</file>
+            <file>file:/C:/Users/vinay/Documents/NetBeansProjects/letsmooove/web/owner_details.jsp</file>
+            <file>file:/C:/Users/vinay/Documents/NetBeansProjects/letsmooove/web/curdate.jsp</file>
+            <file>file:/C:/Users/vinay/Documents/NetBeansProjects/letsmooove/web/loc.jsp</file>
+            <file>file:/C:/Users/vinay/Documents/NetBeansProjects/letsmooove/web/bookcart.jsp</file>
+            <file>file:/C:/Users/vinay/Documents/NetBeansProjects/letsmooove/web/css/udtl.css</file>
             <file>file:/C:/Users/vinay/Documents/NetBeansProjects/letsmooove/web/index.jsp</file>
+            <file>file:/C:/Users/vinay/Documents/NetBeansProjects/letsmooove/web/pgRedirect.jsp</file>
             <file>file:/C:/Users/vinay/Documents/NetBeansProjects/letsmooove/src/java/GenerateOtp.java</file>
-            <file>file:/C:/Users/vinay/Documents/NetBeansProjects/letsmooove/web/META-INF/context.xml</file>
+            <file>file:/C:/Users/vinay/Documents/NetBeansProjects/letsmooove/web/otp.jsp</file>
+            <file>file:/C:/Users/vinay/Documents/NetBeansProjects/letsmooove/web/photos/usericon.png</file>
+            <file>file:/C:/Users/vinay/Documents/NetBeansProjects/letsmooove/src/java/BookConfirm.java</file>
+            <file>file:/C:/Users/vinay/Documents/NetBeansProjects/letsmooove/web/photos/ownerimg.jpg</file>
+            <file>file:/C:/Users/vinay/Documents/NetBeansProjects/letsmooove/web/findride.jsp</file>
+            <file>file:/C:/Users/vinay/Documents/NetBeansProjects/letsmooove/web/getLastMessage.jsp</file>
+            <file>file:/C:/Users/vinay/Documents/NetBeansProjects/letsmooove/src/java/SignOut.java</file>
+            <file>file:/C:/Users/vinay/Documents/NetBeansProjects/letsmooove/web/photos/userimg.jpg</file>
+            <file>file:/C:/Users/vinay/Documents/NetBeansProjects/letsmooove/web/chat.jsp</file>
+            <file>file:/C:/Users/vinay/Documents/NetBeansProjects/letsmooove/web/dat.txt</file>
+            <file>file:/C:/Users/vinay/Documents/NetBeansProjects/letsmooove/src/java/Mailer.java</file>
+            <file>file:/C:/Users/vinay/Documents/NetBeansProjects/letsmooove/src/java/Register.java</file>
+            <file>file:/C:/Users/vinay/Documents/NetBeansProjects/letsmooove/web/user_details.jsp</file>
+            <file>file:/C:/Users/vinay/Documents/NetBeansProjects/letsmooove/web/css/sendbox.css</file>
+            <file>file:/C:/Users/vinay/Documents/NetBeansProjects/letsmooove/src/java/BookingCart.java</file>
+            <file>file:/C:/Users/vinay/Documents/NetBeansProjects/letsmooove/web/getMessageCount.jsp</file>
+            <file>file:/C:/Users/vinay/Documents/NetBeansProjects/letsmooove/web/crdecider.jsp</file>
+            <file>file:/C:/Users/vinay/Documents/NetBeansProjects/letsmooove/web/dashboard.jsp</file>
         </group>
     </open-files>
 </project-private>

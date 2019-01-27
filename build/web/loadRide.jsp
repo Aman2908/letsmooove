@@ -50,15 +50,15 @@
                     PrintWriter pw = response.getWriter();
                     Connection con = JdbcConnection.getConnection(pw);
                     PreparedStatement ps = con.prepareStatement("select * from offeredrides where fromLat >= ? and fromLat <= ? and fromLong >= ? and fromLong <= ? and toLat >= ? and toLat <= ?  and toLong >= ? and toLong <= ? and date1=?");
-                    ps.setString(1, String.valueOf(Float.valueOf(fromLat) - 1));
-                    ps.setString(2, String.valueOf(Float.valueOf(fromLat) + 1));
-                    ps.setString(3, String.valueOf(Float.valueOf(fromLong) - 1));
-                    ps.setString(4, String.valueOf(Float.valueOf(fromLong) + 1));
+                    ps.setString(1, String.valueOf(Float.valueOf(fromLat) - .1));
+                    ps.setString(2, String.valueOf(Float.valueOf(fromLat) + .1));
+                    ps.setString(3, String.valueOf(Float.valueOf(fromLong) - .1));
+                    ps.setString(4, String.valueOf(Float.valueOf(fromLong) + .1));
 
-                    ps.setString(5, String.valueOf(Float.valueOf(toLat) - 1));
-                    ps.setString(6, String.valueOf(Float.valueOf(toLat) + 1));
-                    ps.setString(7, String.valueOf(Float.valueOf(toLong) - 1));
-                    ps.setString(8, String.valueOf(Float.valueOf(toLong) + 1));
+                    ps.setString(5, String.valueOf(Float.valueOf(toLat) - .1));
+                    ps.setString(6, String.valueOf(Float.valueOf(toLat) + .1));
+                    ps.setString(7, String.valueOf(Float.valueOf(toLong) - .1));
+                    ps.setString(8, String.valueOf(Float.valueOf(toLong) + .1));
 
                     ps.setString(9, date);
                     System.out.println(date);
@@ -86,7 +86,7 @@
                         }
 
                         System.out.println("mob = " + name);
-
+                        if(Integer.parseInt(seatavail)>0){
                         res += "<div class=\"col-sm-8\"><b>" + name + "</b><br>\n"
                                 + "                                source: " + source + "<br>\n"
                                 + "                                destination: " + destination + "<br>\n"
@@ -113,6 +113,7 @@
                                 + "</form>"
                                 
                                 + "                            </div>" + "<br>";
+                        }
                         
                     }
 

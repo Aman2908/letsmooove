@@ -104,10 +104,10 @@
 		
 	</table>
 </div>
-
+        <br><br>
 	<div>
-		<input type = "text" id = "msg" class = "typebox" style="width: 85%">
-		<button class = "sendbutton" onclick="saveMessage()" style="width: 10%">Send</button>
+		<input type = "text" id = "msg" class = "typebox" style="width: 80%">
+		<button class = "sendbutton" onclick="saveMessage()" style="width: 18%">Send</button>
 	</div>
 
 </body>
